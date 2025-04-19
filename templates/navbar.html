@@ -1,8 +1,8 @@
 
         
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'home' %}">Navbar</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+            <a class="navbar-brand" href="{% url 'home' %}">Customer Relationship management</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -11,17 +11,17 @@
             
                 {% if user.is_authenticated %}
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'add_record' %}">Add record</a>
+                    <a class="nav-link text-white" href="{% url 'add_record' %}">Add record</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'logout' %}">Log out</a>
+                    <a class="nav-link text-white" href="{% url 'logout' %}">Log out</a>
                 </li>
                 {% else %}
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'register' %}">Register</a>
+                    <a class="nav-link text-white" href="{% url 'register' %}">Register</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'home' %}">Log in</a>
+                    <a class="nav-link text-white" href="{% url 'home' %}">Log in</a>
                 </li>
 
                 {% endif %}
